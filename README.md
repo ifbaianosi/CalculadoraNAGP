@@ -49,10 +49,10 @@ Aplicação Java construída utilizando a biblioteca de construção de interfac
 ## 🎨 Layout
 
 #### Cálculadora
-<img src="https://github.com/ifbaianosi/assets/blob/main/calculadora-auxilio-transporte/calculadora-auxílio-transporte.png" width="800px" />
+<img src="https://github.com/ifbaianosi/assets/blob/main/calculadora-auxilio-transporte/calculadora-aux%C3%ADlio-transporte.PNG" width="800px" />
 
 #### PDF com o resultado para impressão
-<img src="https://github.com/ifbaianosi/assets/blob/main/calculadora-auxilio-transporte/pdf-calculo-do-auxilio-transporte.png" width="800px"/>
+<img src="https://github.com/ifbaianosi/assets/blob/main/calculadora-auxilio-transporte/pdf-calculo-do-auxilio-transporte.PNG" width="800px"/>
 
 
 ---
