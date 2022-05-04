@@ -24,7 +24,7 @@
 👉<a href="#-layout" style="text-decoration: none"> Layout</a> <br/>
 👉<a href="#-como-executar-o-projeto" style="text-decoration: none"> Como executar</a> <br/>
 👉<a href="#-tecnologias" style="text-decoration: none"> Tecnologias</a> <br/>
-👉<a href="#-autor" style="text-decoration: none"> Autor</a> <br/>
+👉<a href="#-autor" style="text-decoration: none"> Autores</a> <br/>
 👉<a href="#-user-content--licença" style="text-decoration: none"> Licença</a>
 
 </p>
@@ -87,7 +87,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <a name="-autor"></a>
 
-## 🦸‍♂️ **Autor**
+## 🦸‍♂️ **Autores**
+
 
 <p>
  <img src="https://avatars.githubusercontent.com/u/10993285?v=4" width="150px;" alt="glaubermatos"/>
@@ -97,6 +98,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 [![Linkedin Badge](https://img.shields.io/badge/-linkedin-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/glaubermatos/)](https://www.linkedin.com/in/glaubermatos/)
 
+<p>
+ <img src="https://avatars.githubusercontent.com/u/10993069?v=4" width="150px;" alt="aijalon"/>
+ <br />
+ <sub><strong>🌟 Aijalon Brito Junior 🌟</strong></sub>
+</p>
+
+[![Linkedin Badge](https://img.shields.io/badge/-linkedin-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aijalon-junior/)](https://www.linkedin.com/in/aijalon-junior/)
+
 ---
 <a name="-user-content--licença"></a>
 
@@ -104,6 +113,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com :satisfied: por Glauber de Oliveira Matos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/glaubermatos/)
+Feito com :satisfied: por Glauber de Oliveira Matos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/glaubermatos/) e Aijalon Brito Junior 👋🏽 [Entre em contato!](https://www.linkedin.com/in/aijalon-junior/)
 
 ---
