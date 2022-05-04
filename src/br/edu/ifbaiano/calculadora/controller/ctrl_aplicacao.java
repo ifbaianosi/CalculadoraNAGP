@@ -13,6 +13,11 @@ import br.edu.ifbaiano.calculadora.view.aplicacao;
 public class ctrl_aplicacao extends aplicacao implements ActionListener{
 
 	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
 	 * @param args
 	 */	
 	
@@ -66,10 +71,10 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 	private void calcula_porDia() {
 		
 		// obtem o valores informados nos campos
-		float vbasico = getJMoneyTextField_vencimentoBasico2().getValor();
+//		float vbasico = getJMoneyTextField_vencimentoBasico2().getValor();
 		float vPassagemDiaria = getJMoneyTextField_valorPassagem().getValor();
 		int qtdDeslocamentoMes = Integer.parseInt(getJTextField_qtdDeslocamento2().getText());
-		int qtdPassagem = Integer.parseInt(getJTextField_qtdPassagem().getText());
+//		int qtdPassagem = Integer.parseInt(getJTextField_qtdPassagem().getText());
 		
 		/**
 		 * calculo 
@@ -90,7 +95,7 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 		
 		
 		/**
-		 * setando os valores no campos do formulário
+		 * setando os valores no campos do formulï¿½rio
 		 */
 		getJMoneyTextField_valorReceber().setValor(qtdDeslocamento_x_vlrDiario);		
 		getJMoneyTextField_valorMensal().setValor(vmensal);	
@@ -108,7 +113,7 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 		float vmensal_22 = vmensal/22;*/
 		
 		/**
-		 * calculo do 6% de desconto do vencimento básico
+		 * calculo do 6% de desconto do vencimento bï¿½sico
 		 */
 		float valorDescontado = (float) (((vbasico / 30) * qtdDeslocamentoMes ) * 0.06);
 		
@@ -124,7 +129,7 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 		
 		
 		/**
-		 * setando os valores no campos do formulário
+		 * setando os valores no campos do formulï¿½rio
 		 */
 		getJMoneyTextField_valorDescontado().setValor(valorDescontado);		
 		getJMoneyTextField_valorAuxilio().setValor(vauxilio);	
@@ -167,9 +172,8 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 			GerarPDF_calc_porMes gp = new GerarPDF_calc_porMes(this);
 			gp.gerar();
 		} catch (FileNotFoundException e1) {
-			JOptionPane.showMessageDialog(rootPane, getJTabbedPane().getTitleAt(0)+".pdf (O arquivo já está aberto.)");
+			JOptionPane.showMessageDialog(rootPane, getJTabbedPane().getTitleAt(0)+".pdf (O arquivo jï¿½ estï¿½ aberto.)");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -179,9 +183,8 @@ public class ctrl_aplicacao extends aplicacao implements ActionListener{
 			GerarPDF_calc_porDia gp = new GerarPDF_calc_porDia(this);
 			gp.gerar();
 		} catch (FileNotFoundException e1) {
-			JOptionPane.showMessageDialog(rootPane, getJTabbedPane().getTitleAt(1)+".pdf (O arquivo já está aberto.)");
+			JOptionPane.showMessageDialog(rootPane, getJTabbedPane().getTitleAt(1)+".pdf (O arquivo jï¿½ estï¿½ aberto.)");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -7,7 +7,11 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;  
   
 public class FixedLengthDocument extends PlainDocument {  
-    private int maxLength;  
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int maxLength;  
   
     public FixedLengthDocument(int maxlen) {  
         super();  

@@ -1,25 +1,17 @@
 package br.edu.ifbaiano.calculadora.utils;
 
 import java.awt.AWTEvent;
-import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
-import java.util.List;
 
-import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
 import javax.swing.JDialog;
-import javax.swing.JFormattedTextField;
-import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
-//import com.michaelbaranov.microba.calendar.DatePicker;
 
 public class keyPressed {
 	
@@ -99,16 +91,6 @@ public class keyPressed {
 			}		
 		});
 	}
-	
-	/*public static void vkF2(final JTextField jTextField, final Class<JDialog> janela, final JComponent nextFocus) {
-		jTextField.addKeyListener(new java.awt.event.KeyAdapter() {   
-			public void keyPressed(java.awt.event.KeyEvent e) {
-				if (e.getKeyCode() == KeyEvent.VK_F2){
-					janela = new 						
-				}
-			}		
-		});
-	}*/
 	
 	public static void vkEscape(final JDialog jDialog) {
 		EventQueue queue = new EventQueue()

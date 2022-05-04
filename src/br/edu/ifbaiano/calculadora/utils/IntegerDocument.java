@@ -9,7 +9,12 @@ import javax.swing.text.BadLocationException;
   
 public class IntegerDocument extends FixedLengthDocument 
 {  
-    public IntegerDocument(int maxlen) {  
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public IntegerDocument(int maxlen) {  
         super(maxlen);  
     }  
   

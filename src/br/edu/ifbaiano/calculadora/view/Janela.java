@@ -1,11 +1,10 @@
 package br.edu.ifbaiano.calculadora.view;
 
-import java.awt.BorderLayout;
-
-import javax.swing.JButton;
 import javax.swing.JFrame;
 
 	public class Janela extends JFrame {
+		
+		private static final long serialVersionUID = 1L;
 
 		public Janela() {
 			super("Janela Principal");

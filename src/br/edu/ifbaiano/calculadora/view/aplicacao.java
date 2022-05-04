@@ -2,30 +2,20 @@ package br.edu.ifbaiano.calculadora.view;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Desktop;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
-import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Rectangle;
-import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.URISyntaxException;
-import java.util.StringTokenizer;
+import java.awt.event.KeyEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -36,22 +26,12 @@ import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.border.TitledBorder;
-import javax.swing.filechooser.FileFilter;
-
-import br.edu.ifbaiano.calculadora.utils.BackgroundFocusField;
-import br.edu.ifbaiano.calculadora.utils.FixedLengthDocument;
-import br.edu.ifbaiano.calculadora.utils.IntegerDocument;
-import br.edu.ifbaiano.calculadora.utils.keyPressed;
 
 import com.g5.JMoneyTextField;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Font.FontFamily;
-import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
-import java.awt.event.KeyEvent;
-import java.awt.Dimension;
+
+import br.edu.ifbaiano.calculadora.utils.BackgroundFocusField;
+import br.edu.ifbaiano.calculadora.utils.IntegerDocument;
+import br.edu.ifbaiano.calculadora.utils.keyPressed;
 
 public class aplicacao extends JFrame {
 
@@ -120,7 +100,6 @@ public class aplicacao extends JFrame {
 	private JLabel jLabel11 = null;
 	private JTextField jTextField_qtdDeslocamento2 = null;
 	private JButton jButton_imprimir = null;
-	private Image img;
 	private JLabel jLabel_imgMEC = null;
 	private JPanel jPanel1 = null;
 	private JPanel jPanel11 = null;
@@ -244,7 +223,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints6.insets = new Insets(2, 0, 0, 0);
 			gridBagConstraints6.gridy = 0;
 			jLabel4 = new JLabel();
-			jLabel4.setText("Cálculo do Auxílio-Transporte");
+			jLabel4.setText("CÃ¡lculo do AuxÃ­lio-Transporte");
 			jLabel4.setFont(new Font("Dialog", Font.BOLD, 18));
 			jLabel4.setHorizontalAlignment(SwingConstants.CENTER);
 			jLabel4.setBackground(new Color(51, 153, 0));
@@ -276,7 +255,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints18.insets = new Insets(0, 5, 0, 0);
 			gridBagConstraints18.gridy = 2;
 			jLabel11 = new JLabel();
-			jLabel11.setText("Quantidade de Deslocamento por Mês");
+			jLabel11.setText("Quantidade de Deslocamento por MÃªs");
 			GridBagConstraints gridBagConstraints14 = new GridBagConstraints();
 			gridBagConstraints14.fill = GridBagConstraints.HORIZONTAL;
 			gridBagConstraints14.gridy = 3;
@@ -310,24 +289,24 @@ public class aplicacao extends JFrame {
 			gridBagConstraints12.anchor = GridBagConstraints.WEST;
 			gridBagConstraints12.gridy = 3;
 			jLabel8 = new JLabel();
-			jLabel8.setText("Quantidade de Passagens Diárias:");
+			jLabel8.setText("Quantidade de Passagens DiÃ¡rias:");
 			GridBagConstraints gridBagConstraints11 = new GridBagConstraints();
 			gridBagConstraints11.gridx = 0;
 			gridBagConstraints11.insets = new Insets(0, 5, 0, 5);
 			gridBagConstraints11.anchor = GridBagConstraints.WEST;
 			gridBagConstraints11.gridy = 1;
 			jLabel7 = new JLabel();
-			jLabel7.setText("Valor da Passagem Diária:");
+			jLabel7.setText("Valor da Passagem DiÃ¡ria:");
 			GridBagConstraints gridBagConstraints7 = new GridBagConstraints();
 			gridBagConstraints7.gridx = 0;
 			gridBagConstraints7.anchor = GridBagConstraints.WEST;
 			gridBagConstraints7.insets = new Insets(5, 5, 0, 5);
 			gridBagConstraints7.gridy = 0;
 			jLabel5 = new JLabel();
-			jLabel5.setText("Vencimento Básico:");
+			jLabel5.setText("Vencimento BÃ¡sico:");
 			jPanel_formulario = new JPanel();
 			jPanel_formulario.setLayout(new GridBagLayout());
-			jPanel_formulario.setBorder(BorderFactory.createTitledBorder(null, " Parâmetros ", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
+			jPanel_formulario.setBorder(BorderFactory.createTitledBorder(null, " ParÃ¢metros ", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
 			jPanel_formulario.setBackground(Color.white);
 			jPanel_formulario.add(jLabel5, gridBagConstraints7);
 			jPanel_formulario.add(jLabel7, gridBagConstraints11);
@@ -421,7 +400,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints20.weightx = 0.0;
 			gridBagConstraints20.gridy = 1;
 			jLabel12 = new JLabel();
-			jLabel12.setText("Valor do Auxílio");
+			jLabel12.setText("Valor do AuxÃ­lio");
 			GridBagConstraints gridBagConstraints19 = new GridBagConstraints();
 			gridBagConstraints19.gridx = 0;
 			gridBagConstraints19.fill = GridBagConstraints.HORIZONTAL;
@@ -465,7 +444,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints16.insets = new Insets(0, 5, 0, 0);
 			gridBagConstraints16.gridy = 2;
 			jLabel10 = new JLabel();
-			jLabel10.setText("(6% do Vencimento Básico)");
+			jLabel10.setText("(6% do Vencimento BÃ¡sico)");
 			jLabel10.setFont(new Font("Dialog", Font.PLAIN, 10));
 			GridBagConstraints gridBagConstraints15 = new GridBagConstraints();
 			gridBagConstraints15.gridx = 0;
@@ -515,7 +494,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints30.insets = new Insets(0, 0, 0, 4);
 			gridBagConstraints30.gridy = 3;
 			jLabel20 = new JLabel();
-			jLabel20.setText("Núcleo de Apoio a Gestão de Pessoas");
+			jLabel20.setText("NÃºcleo de Apoio a GestÃ£o de Pessoas");
 			jLabel20.setFont(new Font("Dialog", Font.PLAIN, 8));
 			GridBagConstraints gridBagConstraints27 = new GridBagConstraints();
 			gridBagConstraints27.gridx = 1;
@@ -549,7 +528,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints26.weightx = 1.0;
 			gridBagConstraints26.gridy = 3;
 			jLabel16 = new JLabel();
-			jLabel16.setText("Núcleo de Gestão em Tecnologia da Informação");
+			jLabel16.setText("NÃºcleo de GestÃ£o em Tecnologia da InformaÃ§Ã£o");
 			jLabel16.setFont(new Font("Dialog", Font.PLAIN, 8));
 			jPanel5 = new JPanel();
 			jPanel5.setLayout(new GridBagLayout());
@@ -574,8 +553,8 @@ public class aplicacao extends JFrame {
 	public JTabbedPane getJTabbedPane() {
 		if (jTabbedPane == null) {
 			jTabbedPane = new JTabbedPane();			
-			jTabbedPane.addTab("Cálculo mensal", null, getJPanel6(), null);
-			jTabbedPane.addTab("Cálculo com base na quantidade de dias", null, getJPanel2(), null);
+			jTabbedPane.addTab("CÃ¡lculo mensal", null, getJPanel6(), null);
+			jTabbedPane.addTab("CÃ¡lculo com base na quantidade de dias", null, getJPanel2(), null);
 		}
 		return jTabbedPane;
 	}
@@ -624,7 +603,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints45.insets = new Insets(0, 5, 0, 5);
 			gridBagConstraints45.gridx = 1;
 			jLabel25 = new JLabel();
-			jLabel25.setText("Valor Lançado no Sistema");
+			jLabel25.setText("Valor LanÃ§ado no Sistema");
 			/*jLabel25.setBackground(new Color(51, 51, 51));
 			jLabel25.setForeground(new Color(51, 51, 51));*/
 			jLabel24 = new JLabel();
@@ -632,7 +611,7 @@ public class aplicacao extends JFrame {
 			jLabel23 = new JLabel();
 			jLabel23.setText("Valor Mensal:");
 			jLabel22 = new JLabel();
-			jLabel22.setText("Quant. Deslocamento X Valor Diário");
+			jLabel22.setText("Quant. Deslocamento X Valor DiÃ¡rio");
 			GridBagConstraints gridBagConstraints141 = new GridBagConstraints();
 			gridBagConstraints141.fill = GridBagConstraints.HORIZONTAL;
 			gridBagConstraints141.gridwidth = 1;
@@ -646,7 +625,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints121.fill = GridBagConstraints.HORIZONTAL;
 			gridBagConstraints121.gridx = 0;
 			jLabel81 = new JLabel();
-			jLabel81.setText("Quantidade de Deslocamento por Mês:");
+			jLabel81.setText("Quantidade de Deslocamento por MÃªs:");
 			jLabel81.setHorizontalAlignment(SwingConstants.LEADING);
 			GridBagConstraints gridBagConstraints111 = new GridBagConstraints();
 			gridBagConstraints111.insets = new Insets(0, 5, 0, 0);
@@ -654,7 +633,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints111.fill = GridBagConstraints.HORIZONTAL;
 			gridBagConstraints111.gridx = 0;
 			jLabel71 = new JLabel();
-			jLabel71.setText("Valor diário por deslocamento:");
+			jLabel71.setText("Valor diÃ¡rio por deslocamento:");
 			jLabel71.setHorizontalAlignment(SwingConstants.LEADING);
 			GridBagConstraints gridBagConstraints71 = new GridBagConstraints();
 			gridBagConstraints71.gridx = 0;
@@ -662,11 +641,11 @@ public class aplicacao extends JFrame {
 			gridBagConstraints71.insets = new Insets(5, 5, 0, 0);
 			gridBagConstraints71.gridy = 0;
 			jLabel51 = new JLabel();
-			jLabel51.setText("Vencimento Básico:");
+			jLabel51.setText("Vencimento BÃ¡sico:");
 			jLabel51.setHorizontalAlignment(SwingConstants.LEADING);
 			jPanel_formulario1 = new JPanel();
 			jPanel_formulario1.setLayout(new GridBagLayout());
-			jPanel_formulario1.setBorder(BorderFactory.createTitledBorder(null, " Parâmetros ", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
+			jPanel_formulario1.setBorder(BorderFactory.createTitledBorder(null, " ParÃ¢metros ", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
 			jPanel_formulario1.setBackground(Color.white);
 			jPanel_formulario1.add(jLabel51, gridBagConstraints71);
 			jPanel_formulario1.add(jLabel71, gridBagConstraints111);
@@ -1025,7 +1004,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints51.insets = new Insets(0, 4, 0, 0);
 			gridBagConstraints51.gridy = 1;
 			jLabel29 = new JLabel();
-			jLabel29.setText("BR 420 (Rodovia Santa Inês – Ubaíra), Zona Rural, Bahia");
+			jLabel29.setText("BR 420 (Rodovia Santa InÃªs - UbaÃ­ra), Zona Rural, Bahia");
 			jLabel29.setFont(new Font("Dialog", Font.PLAIN, 10));
 			GridBagConstraints gridBagConstraints50 = new GridBagConstraints();
 			gridBagConstraints50.gridx = 0;
@@ -1034,7 +1013,7 @@ public class aplicacao extends JFrame {
 			gridBagConstraints50.insets = new Insets(4, 4, 0, 0);
 			gridBagConstraints50.gridy = 0;
 			jLabel28 = new JLabel();
-			jLabel28.setText("IF Baiano – Campus Santa Inês");
+			jLabel28.setText("IF Baiano - Campus Santa InÃªs");
 			jLabel28.setFont(new Font("Dialog", Font.PLAIN, 10));
 			jPanel10 = new JPanel();
 			jPanel10.setLayout(new GridBagLayout());
@@ -1180,7 +1159,7 @@ public class aplicacao extends JFrame {
 			jLabel_imgMEC.setIcon(new ImageIcon(getClass().getResource("/br/edu/ifbaiano/calculadora/img/ministerio_da_educacao_90x30.jpg")));
 			
 			/**
-			 * só executa apartir da versão 1.3 do java
+			 * sï¿½ executa apartir da versï¿½o 1.3 do java
 			 */
 			/*File logo;
 			try {
@@ -1401,6 +1380,11 @@ public class aplicacao extends JFrame {
 		getJButton_fechar().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "actionName");
 		getJButton_fechar().getActionMap().put("actionName",new AbstractAction("actionName") 
 			{
+				/**
+				 * 
+				 */
+				private static final long serialVersionUID = 1L;
+
 				public void actionPerformed(ActionEvent evt) {
 					dispose();
 				}

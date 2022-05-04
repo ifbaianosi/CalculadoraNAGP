@@ -2,17 +2,12 @@ package br.edu.ifbaiano.calculadora.utils;
 
 import java.awt.Color;
 
-import javax.swing.JComboBox;
-import javax.swing.JFormattedTextField;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.UIManager;
 
 public class BackgroundFocusField {
 
-	private JTextField jTextField;
-	
 	//private static Color backgroundColor = new Color(255, 255, 204);
 	private static Color backgroundColor = new Color(204, 255, 204);
 	
